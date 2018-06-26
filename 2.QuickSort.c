@@ -3,10 +3,12 @@ int arr[10];
 int i,n=6;
 
 void swap(int a, int b){
+    printf("A: %d B: %d \n",a,b);
     int temp = arr[a];
     arr[a] = arr[b];
     arr[b] = temp;
     printf("Swapped.! \n");
+    printf("A: %d B: %d",a,b);
 }
 
 void pivot(){
@@ -15,8 +17,8 @@ void pivot(){
     while(f!=l){
     for(i=0;i<n;i++){
         printf("\nPass %d\n",i);
-        if(p<f){swap(p,f);}
-        if(p>l){swap(p,l);}
+        if(p<arr[f]){swap(p,f);}
+        if(p>arr[l]){swap(p,l);}
         f++;l--;
     }
     }
