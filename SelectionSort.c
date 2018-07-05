@@ -11,18 +11,18 @@ void swap(int a,int b){
         printf("%d \t",ele[i]);
     }
 }
-int main()
-{   int i,j;
+int main(){
+    int i,j;
     printf("Enter %d elements: \n",n+1);
     for(i=0;i<n;i++)
     {
         scanf("%d",&ele[i]);
     }
-    printf("You entered the elements: \n");
-    for(i=0;i<n;i++)
-    {
-        printf("%d \t",ele[i]);
-    }
+    // printf("You entered the elements: \n");
+    // for(i=0;i<n;i++)
+    // {
+    //     printf("%d \t",ele[i]);
+    // }
 // Sorting
     for(i=0;i<n;i++)
     {
