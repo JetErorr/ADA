@@ -5,34 +5,27 @@ void swap(int a,int b){
     int temp = ele[a];
     ele[a]=ele[b];
     ele[b]=temp;
-    printf("\nSwapped %d and %d: ",ele[a],temp);
-    for(i=0;i<n;i++)
-    {
-        printf("%d \t",ele[i]);
-    }
+    printf("\n\tSwapped %d and %d: ",ele[a],temp);
+    for(i=0;i<n;i++){printf("%d \t",ele[i]);}
 }
 int main(){
     int i,j;
-    printf("Enter %d elements: \n",n+1);
-    for(i=0;i<n;i++)
-    {
+    printf("Enter %d elements: \n\n",n+1);
+    for(i=0;i<n;i++) {
         scanf("%d",&ele[i]);
     }
-    // printf("You entered the elements: \n");
-    // for(i=0;i<n;i++)
-    // {
-    //     printf("%d \t",ele[i]);
-    // }
+    printf("\tYou entered the elements: \n\n\t\t\t");
+    for(i=0;i<n;i++) {
+        printf("%d \t",ele[i]);
+    }
 // Sorting
-    for(i=0;i<n;i++)
-    {
-        printf("\n Pass: %d \n",i);
-        for(j=0;j<n-1;j++)
-        {
-            if(ele[j]>ele[j+1]){
-                swap(j,j+1);
+    for(i=0;i<n;i++) {
+        // printf("\nPass: %d",i);
+        for(j=i+1;j<n;j++) {
+            if(ele[i]>ele[j]) {
+                swap(i,j);
             }
         }
-        printf("Pass %d complete.\n",i);
+        // printf("\nPass %d complete.\n",i);
     }
 }
