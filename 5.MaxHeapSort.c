@@ -11,6 +11,16 @@ void swap(int a,int b){
         printf("%d \t",ele[i]);
     }
 }
+
+int heap(i,j){
+    int ans[j] = ele[i];
+    int ans[j+1] = ele[i+1];
+    int ans[j+2] = ele[i+2];
+    if(i+3!=7){
+        heap(i+3,j+3)
+    } 
+}
+
 int main(){
     printf("Enter 7 elements:\n");
     for(i=0;i<n;i++)
@@ -22,6 +32,6 @@ int main(){
     {
         printf("%d \t",ele[i]);
     }
-    
+    heap();
     return 0;
 }
